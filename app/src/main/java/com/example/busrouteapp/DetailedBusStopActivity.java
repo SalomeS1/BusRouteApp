@@ -70,8 +70,8 @@ public class DetailedBusStopActivity extends Activity {
             final Bus bus = getItem(position);
             TextView busNumber = view.findViewById(R.id.bus_number);
             TextView timeLeft = view.findViewById(R.id.time_left);
-            busNumber.setText(bus.getBusNumber());
-            timeLeft.setText(bus.getArrivalTimeLeft());
+            busNumber.setText("ავტობუსი #" + bus.getBusNumber() );
+            timeLeft.setText(bus.getArrivalTimeLeft() + " წუთი");
             return view;
         }
     }

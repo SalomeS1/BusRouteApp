@@ -81,9 +81,9 @@ public class DetailedRouteActivity extends Activity {
                     Intent intent = new Intent(DetailedRouteActivity.this, DetailedBusStopActivity.class);
                     intent.putExtra("stopId",busStop.getBusStopId());
                     startActivity(intent);
-                    finish();
                 }
             });
+
 
             return view;
         }

@@ -1,65 +1,44 @@
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
+
+
     <LinearLayout
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/stopA"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:width="0dp"
+            android:gravity="center"
+            android:text="First Stop"
             android:layout_height="wrap_content">
-            <TextView
-                android:layout_weight="1"
-                android:gravity="center"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Stop A">
-            </TextView>
-            <TextView
-                android:id="@+id/stopA"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="First Stop"
-                android:layout_height="wrap_content">
-            </TextView>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
+        </TextView>
+        <TextView
+            android:id="@+id/stopB"
+            android:width="0dp"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Second Stop"
             android:layout_height="wrap_content">
-            <TextView
-                android:layout_weight="1"
-                android:gravity="center"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Stop B">
-            </TextView>
-            <TextView
-                android:id="@+id/stopB"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="Second Stop"
-                android:layout_height="wrap_content">
-            </TextView>
-        </LinearLayout>
+        </TextView>
+
+
+
+        <Button
+            android:id="@+id/more"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="მეტის ნახვა">
+        </Button>
     </LinearLayout>
-
-    <Button
-        android:id="@+id/more"
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="More Info">
-    </Button>
 
 
 </LinearLayout>

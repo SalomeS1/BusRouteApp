@@ -71,17 +71,19 @@ public class MainActivity extends Activity {
             stopA.setText(busRoute.getFirstStop());
             stopB.setText(busRoute.getSecondStop());
 
+
             view.findViewById(R.id.more).setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(MainActivity.this, DetailedRouteActivity.class);
                     intent.putExtra("routeId", busRoute.getRouteNumber());
                     startActivity(intent);
-                    finish();
                 }
             });
 
+
             return view;
         }
+
     }
 }

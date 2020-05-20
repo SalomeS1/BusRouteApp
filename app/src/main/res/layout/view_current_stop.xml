@@ -6,25 +6,25 @@
 
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
         <TextView
             android:id="@+id/bus_number"
-            android:layout_weight="1"
-            android:gravity="center"
             android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
             android:text="Bus Number"
-            android:layout_height="wrap_content">
-        </TextView>
+            android:layout_gravity="center"/>
+
         <TextView
             android:id="@+id/time_left"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:gravity="center"
-            android:text="Time"
-            android:layout_height="wrap_content">
-        </TextView>
+            android:layout_height="wrap_content"
+            android:text="Arrival Time Left"
+            android:layout_gravity="center"/>
 
     </LinearLayout>
 
